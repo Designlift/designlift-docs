@@ -133,7 +133,7 @@
         <hgroup class="vertical center">
           <p class="xl">🎨</p>
           <h2 class="xl" id="theme">Theme</h2>
-          <p class="lg">Refine the theme settings to establish strong consistent design system.</p>
+          <p class="lg">Refine the theme settings to establish a strong, consistent design system.</p>
         </hgroup>
       </header>
       <section class="split gap divider">
