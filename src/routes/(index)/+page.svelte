@@ -104,11 +104,11 @@
 <div>
   <div class="frame padding fix bottom center w-full">
     <nav class="accent background padding round shadow">
+      <a href="#theme">Theme</a>
       <a href="#layout">Layout</a>
       <a href="#style">Style</a>
       <a href="#scale">Scale</a>
-      <a href="#advanced">Advanced</a>
-      <a href="#theme">Theme</a>
+      <a href="#refine">Refine</a>
       <a href="https://github.com/designlift">
         <svg role="img" viewBox="0 0 24 24" class="h-sm w-sm" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
       </a>
@@ -127,6 +127,49 @@
         <p>Your guide to simpler web design—in one page.</p>
       </hgroup>
     </header>
+
+    <article class="vertical gap frame padding">
+      <header>
+        <hgroup class="vertical center">
+          <p class="xl">🎨</p>
+          <h2 class="xl" id="theme">Theme</h2>
+          <p class="lg">Refine the theme settings to establish strong consistent design system.</p>
+        </hgroup>
+      </header>
+      <section class="split gap divider">
+        <hgroup>
+          <h3 class="lg">Variables</h3>
+          <p>Define the visual qualities using color palette, typography, and scale in <code>theme.css</code> and watch the magic happen.</p>
+        </hgroup>
+
+        <section class="vertical gap">
+          <div class="vertical gap">
+            <menu>
+              <button on:click={setTheme("a", themes)}>Theme A</button>
+              <button on:click={setTheme("b", themes)}>Theme B</button>
+              <button on:click={setTheme("c", themes)}>Theme C</button>
+            </menu>
+            <section class="padding border frame radius">
+              <div class="vertical background accent radius frame animation" style={themeSelection}>
+                <div>
+                  <!-- <figure>
+                    <img src="https://placehold.co/1920x1080" alt="David Schofield" class="h-xl cover" />
+                  </figure> -->
+                  <section class="padding vertical gap frame">
+                    <hgroup class="vertical">
+                      <h2 class="xl">John Smith</h2>
+                      <p>Chief Executive Officer</p>
+                    </hgroup>
+                    <a class="primary horizontal center"> Message </a>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </article>
+
     <article class="vertical gap frame padding">
       <header>
         <hgroup class="vertical center">
@@ -246,7 +289,7 @@
               <button on:click={(e) => (colorSelection = "highlight")}>.highlight</button>
               <button on:click={(e) => (colorSelection = "none")}><s>none</s></button>
             </menu>
-            <section class="gap padding background vertical accent frame radius">
+            <section class="gap padding border vertical accent frame radius">
               <div class="{colorSelection} padding center">I am a text using {colorSelection}.</div>
               <div class="{colorSelection} padding border center">I am a border using {colorSelection}.</div>
               <div class="{colorSelection} padding background center">I am a background using {colorSelection}.</div>
@@ -409,8 +452,8 @@
       <header>
         <hgroup class="vertical center">
           <p class="xl">🧠</p>
-          <h2 class="xl" id="advanced">Advanced</h2>
-          <p class="lg">Not so advanced concepts to take design to the next level.</p>
+          <h2 class="xl" id="refine">Refine</h2>
+          <p class="lg">Take design to the next level.</p>
         </hgroup>
       </header>
       <section class="split gap divider">
@@ -473,8 +516,8 @@
 
       <section class="split gap divider">
         <hgroup>
-          <h3 class="lg">Stick</h3>
-          <p>Occupy the available screen space between elements with <code>stick</code>, or <code>fix</code>, and add a position <code>top</code>, <code>left</code>, <code>bottom</code>, <code>right</code> class.</p>
+          <h3 class="lg">Position</h3>
+          <p>Position elements on the page with <code>stick</code> or <code>fix</code>, and add a position <code>top</code>, <code>left</code>, <code>bottom</code>, <code>right</code> class.</p>
         </hgroup>
 
         <section class="vertical gap">
@@ -489,48 +532,6 @@
                 <p class="padding">Overflow scroll enhances web user experience by enabling seamless navigation through content that exceeds the available space within a designated container. This feature ensures that users can effortlessly explore lengthy information or images by introducing a scroll bar for convenient access. Its application is vital for maintaining clean and organized web layouts while accommodating diverse content lengths.</p>
                 <p class="w-full {stickSelection} top background highlight padding">Sticky Position</p>
                 <p class="padding">This functionality enhances user interaction by keeping specific content, such as navigation menus or headers, consistently visible. Implementing sticky elements contributes to a more intuitive and accessible browsing experience, allowing users to access crucial information without interruption as they navigate through web content.</p>
-              </div>
-            </section>
-          </div>
-        </section>
-      </section>
-    </article>
-
-    <article class="vertical gap frame padding">
-      <header>
-        <hgroup class="vertical center">
-          <p class="xl">🎨</p>
-          <h2 class="xl" id="theme">Theme</h2>
-          <p class="lg">Refine the theme settings to establish strong consistent design system.</p>
-        </hgroup>
-      </header>
-      <section class="split gap divider">
-        <hgroup>
-          <h3 class="lg">Variables</h3>
-          <p>Define the visual qualities using color palette, typography, and scale in <code>theme.css</code> and watch the magic happen.</p>
-        </hgroup>
-
-        <section class="vertical gap">
-          <div class="vertical gap">
-            <menu>
-              <button on:click={setTheme("a", themes)}>Theme A</button>
-              <button on:click={setTheme("b", themes)}>Theme B</button>
-              <button on:click={setTheme("c", themes)}>Theme C</button>
-            </menu>
-            <section class="padding border frame radius">
-              <div class="vertical background accent radius frame animation" style={themeSelection}>
-                <div>
-                  <!-- <figure>
-                    <img src="https://placehold.co/1920x1080" alt="David Schofield" class="h-xl cover" />
-                  </figure> -->
-                  <section class="padding vertical gap frame">
-                    <hgroup class="vertical">
-                      <h2 class="xl">John Smith</h2>
-                      <p>Chief Executive Officer</p>
-                    </hgroup>
-                    <a class="primary horizontal center"> Message </a>
-                  </section>
-                </div>
               </div>
             </section>
           </div>
