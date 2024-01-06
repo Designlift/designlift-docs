@@ -103,7 +103,7 @@
 
 <div>
   <div class="frame padding fix bottom center w-full">
-    <nav class="accent background padding round shadow">
+    <nav class="accent background padding round shadow wrap">
       <a href="#theme">Theme</a>
       <a href="#layout">Layout</a>
       <a href="#style">Style</a>
