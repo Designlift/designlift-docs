@@ -542,5 +542,12 @@
         </section>
       </section>
     </article>
+    <footer class="frame padding h-xxl">
+      <section class="vertical center sm">
+        <h2 class="lg">Now you're thinking with Designlift.</h2>
+        <p>Designlift CSS is an open-source project by <a href="https://github.com/d471d" rel="noreferrer noopener nofollow">d471d</a>.</p>
+        <p>Designlift CSS is inspired by the ease of <a href="https://tailwindcss.com" rel="noreferrer noopener nofollow">Tailwind CSS</a>, the simplicity of <a href="https://elementalcss.com" rel="noreferrer noopener nofollow">Elemental CSS</a>, and the design of <a href="https://every-layout.dev" rel="noreferrer noopener nofollow">Every Layout</a>.</p>
+      </section>
+    </footer>
   </main>
 </div>
