@@ -542,10 +542,14 @@
         </section>
       </section>
     </article>
-    <footer class="frame padding h-xxl">
-      <section class="vertical center sm">
+    <footer class="frame padding h-xxxl">
+      <section class="vertical center sm gap">
         <h2 class="lg">Now you're thinking with Designlift CSS.</h2>
-        <p>Designlift CSS is an open-source project by <a href="https://github.com/d471d" rel="noreferrer noopener nofollow">d471d</a>.</p>
+        <p><a class="primary" href="https://ko-fi.com/designlift" rel="noreferrer noopener nofollow">Support us on Ko-fi <img src="/images/kofi.svg" alt="Ko-fi" class="h-sm w-sm" /></a></p>
+
+        <p>
+          Designlift CSS is an open-source project by <a href="https://github.com/d471d" rel="noreferrer noopener nofollow">D471d</a>.
+        </p>
         <p>Designlift CSS is inspired by the ease of <a href="https://tailwindcss.com" rel="noreferrer noopener nofollow">Tailwind CSS</a>, the simplicity of <a href="https://elementalcss.com" rel="noreferrer noopener nofollow">Elemental CSS</a>, and the design of <a href="https://every-layout.dev" rel="noreferrer noopener nofollow">Every Layout</a>.</p>
       </section>
     </footer>
